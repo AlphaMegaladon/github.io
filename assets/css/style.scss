@@ -36,6 +36,10 @@
     background-color: rgba(101, 108, 118, 0.2);
   }
 
+  .markdown-body img {
+    background-color: transparent;
+  }
+
   .markdown-body pre,
   .markdown-body .highlight pre {
     background-color: #151b23;
