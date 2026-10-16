@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t">
+  <title id="t">Portfolio split: ETFs 42%, classic funds 38%, insurance 9%, real estate 7%, crypto 4%</title>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; fill: #1f2328; }
+    .b { font-weight: 600; }
+    .m { fill: #59636e; font-size: 14px; }
+    .big { font-size: 22px; font-weight: 700; }
+    .seg { fill: none; stroke-width: 42; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e6edf3; }
+      .m { fill: #9198a1; }
+    }
+  </style>
+  <g transform="rotate(-90 150 150)">
+    <circle class="seg" cx="150" cy="150" r="100" pathLength="100" stroke="#0969da" stroke-dasharray="41.5 58.5" stroke-dashoffset="-0.5"/>
+    <circle class="seg" cx="150" cy="150" r="100" pathLength="100" stroke="#8250df" stroke-dasharray="36.5 63.5" stroke-dashoffset="-43"/>
+    <circle class="seg" cx="150" cy="150" r="100" pathLength="100" stroke="#bf8700" stroke-dasharray="7.75 92.25" stroke-dashoffset="-80.5"/>
+    <circle class="seg" cx="150" cy="150" r="100" pathLength="100" stroke="#1a7f37" stroke-dasharray="6.5 93.5" stroke-dashoffset="-89.25"/>
+    <circle class="seg" cx="150" cy="150" r="100" pathLength="100" stroke="#cf222e" stroke-dasharray="2.75 97.25" stroke-dashoffset="-96.75"/>
+  </g>
+  <text x="150" y="148" class="big" text-anchor="middle">Portfolio</text>
+  <text x="150" y="172" class="m" text-anchor="middle">relative split</text>
+
+  <circle cx="319" cy="75" r="8" fill="#0969da"/>
+  <text x="340" y="81" class="b">42%</text><text x="390" y="81">ETFs (partly leveraged)</text>
+  <circle cx="319" cy="110" r="8" fill="#8250df"/>
+  <text x="340" y="116" class="b">38%</text><text x="390" y="116">Classic funds</text>
+  <circle cx="319" cy="145" r="8" fill="#bf8700"/>
+  <text x="340" y="151" class="b">9%</text><text x="390" y="151">Insurance</text>
+  <circle cx="319" cy="180" r="8" fill="#1a7f37"/>
+  <text x="340" y="186" class="b">7%</text><text x="390" y="186">Real estate (equity)</text>
+  <circle cx="319" cy="215" r="8" fill="#cf222e"/>
+  <text x="340" y="221" class="b">4%</text><text x="390" y="221">Crypto</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 370" width="1000" height="370" role="img" aria-labelledby="t">
+  <title id="t">Profit at expiry when buying a CALL or a PUT. Example: strike 100 euros, premium 5 euros. CALL break-even at 105 euros, PUT break-even at 95 euros.</title>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; fill: #1f2328; }
+    .h { font-size: 20px; font-weight: 600; }
+    .m { fill: #59636e; font-size: 14px; }
+    .ax { stroke: #59636e; stroke-width: 1.5; fill: none; }
+    .k { stroke: #59636e; stroke-width: 1.5; stroke-dasharray: 6 5; }
+    .call { stroke: #1a7f37; stroke-width: 4; fill: none; stroke-linejoin: round; }
+    .put { stroke: #0969da; stroke-width: 4; fill: none; stroke-linejoin: round; }
+    .tc { fill: #1a7f37; }
+    .tp { fill: #0969da; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e6edf3; }
+      .m { fill: #9198a1; }
+      .ax, .k { stroke: #9198a1; }
+      .call { stroke: #3fb950; }
+      .put { stroke: #4493f8; }
+      .tc { fill: #3fb950; }
+      .tp { fill: #4493f8; }
+    }
+  </style>
+
+  <g transform="translate(20,0)">
+    <text x="240" y="26" class="h" text-anchor="middle">Buying a CALL</text>
+    <line class="ax" x1="40" y1="40" x2="40" y2="290"/>
+    <line class="ax" x1="40" y1="180" x2="450" y2="180"/>
+    <text x="32" y="185" class="m" text-anchor="end">0 €</text>
+    <line class="k" x1="240" y1="50" x2="240" y2="290"/>
+    <text x="248" y="64" class="m">strike: 100 €</text>
+    <text x="48" y="56" class="m">profit</text>
+    <text x="48" y="286" class="m">loss</text>
+    <polyline class="call" points="40,210 240,210 410,40"/>
+    <circle class="tc" cx="270" cy="180" r="6"/>
+    <text x="282" y="204" class="tc">break-even: 105 €</text>
+    <text x="140" y="236" class="m" text-anchor="middle">max loss = premium (5 €)</text>
+    <text x="450" y="236" class="m" text-anchor="end">stock price at expiry →</text>
+  </g>
+
+  <g transform="translate(520,0)">
+    <text x="240" y="26" class="h" text-anchor="middle">Buying a PUT</text>
+    <line class="ax" x1="40" y1="40" x2="40" y2="290"/>
+    <line class="ax" x1="40" y1="180" x2="450" y2="180"/>
+    <text x="32" y="185" class="m" text-anchor="end">0 €</text>
+    <line class="k" x1="240" y1="50" x2="240" y2="290"/>
+    <text x="248" y="64" class="m">strike: 100 €</text>
+    <text x="48" y="56" class="m">profit</text>
+    <text x="48" y="286" class="m">loss</text>
+    <polyline class="put" points="110,80 240,210 450,210"/>
+    <circle class="tp" cx="210" cy="180" r="6"/>
+    <text x="198" y="204" class="tp" text-anchor="end">break-even: 95 €</text>
+    <text x="345" y="236" class="m" text-anchor="middle">max loss = premium (5 €)</text>
+    <text x="450" y="170" class="m" text-anchor="end">stock price at expiry →</text>
+  </g>
+
+  <text x="500" y="340" class="m" text-anchor="middle">Colored line = your profit or loss at expiry · gray horizontal line = 0 € (no profit, no loss)</text>
+</svg>
