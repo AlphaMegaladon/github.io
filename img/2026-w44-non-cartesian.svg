@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 430" width="980" height="430" role="img" aria-labelledby="title desc">
+  <title id="title">Why the goal space is non-Cartesian: ceilings, cycles, and uneven terrain</title>
+  <desc id="desc">Three panels illustrating why real life is not a flat Cartesian grid. Left: Saturating dimensions where progress hits a natural ceiling, such as sleep. Middle: Rolled-up or cyclical dimensions where you move in a loop rather than a straight line to infinity, such as work and recovery or seasons. Right: Uneven terrain where genetics and circumstances make some slopes steep walls, some flat downhill coasting, and some a challenging but sustainable climb.</desc>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 15px; fill: #1f2328; }
+    .heading { font-size: 24px; font-weight: 700; }
+    .panel-title { font-size: 18px; font-weight: 700; }
+    .muted { fill: #59636e; font-size: 14px; }
+    .caption { fill: #59636e; font-size: 15px; }
+    .panel { fill: #f6f8fa; stroke: #d1d9e0; stroke-width: 2; }
+    .axis { stroke: #59636e; stroke-width: 1.5; fill: none; }
+    .limit { stroke: #cf222e; stroke-width: 2; stroke-dasharray: 6 5; fill: none; }
+    .curve-blue { stroke: #0969da; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+    .curve-green { stroke: #1a7f37; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+    .curve-red { stroke: #cf222e; stroke-width: 3; stroke-dasharray: 5 4; fill: none; stroke-linecap: round; }
+    .curve-gray { stroke: #8c959f; stroke-width: 3; stroke-dasharray: 4 4; fill: none; stroke-linecap: round; }
+    .loop { stroke: #8250df; stroke-width: 3.5; fill: none; }
+    .cyl-back { stroke: #8c959f; stroke-width: 1.5; stroke-dasharray: 4 4; fill: none; }
+    .fill-blue { fill: #0969da; }
+    .fill-green { fill: #1a7f37; }
+    .fill-red { fill: #cf222e; }
+    .fill-purple { fill: #8250df; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e6edf3; }
+      .muted, .caption { fill: #9198a1; }
+      .panel { fill: #151b23; stroke: #3d444d; }
+      .axis, .cyl-back { stroke: #9198a1; }
+      .limit { stroke: #f85149; }
+      .curve-blue { stroke: #4493f8; }
+      .curve-green { stroke: #3fb950; }
+      .curve-red { stroke: #f85149; }
+      .curve-gray { stroke: #656d76; }
+      .loop { stroke: #a371f7; }
+      .fill-blue { fill: #4493f8; }
+      .fill-green { fill: #3fb950; }
+      .fill-red { fill: #f85149; }
+      .fill-purple { fill: #a371f7; }
+    }
+  </style>
+  <defs>
+    <marker id="m-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path class="fill-purple" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+    <marker id="m-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path class="fill-green" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+  </defs>
+
+  <text class="heading" x="490" y="38" text-anchor="middle">Why the goal space is not a flat Cartesian grid</text>
+
+  <!-- Panel 1: Saturating / Bounded Dimensions -->
+  <g transform="translate(25, 65)">
+    <rect class="panel" x="0" y="0" width="290" height="310" rx="14"/>
+    <text class="panel-title" x="145" y="34" text-anchor="middle">1. Bounded Dimensions</text>
+    <text class="muted" x="145" y="56" text-anchor="middle">Some axes saturate at a ceiling</text>
+
+    <!-- Axes -->
+    <line class="axis" x1="45" y1="235" x2="255" y2="235"/>
+    <line class="axis" x1="45" y1="235" x2="45" y2="85"/>
+
+    <!-- Ceiling line -->
+    <line class="limit" x1="45" y1="110" x2="255" y2="110"/>
+    <text class="fill-red" x="250" y="102" text-anchor="end">Natural limit (100% rested)</text>
+
+    <!-- Saturation curve -->
+    <path class="curve-blue" d="M 45,230 Q 95,115 160,112 T 250,111"/>
+
+    <text class="muted" x="150" y="256" text-anchor="middle">Input (e.g. hours of sleep) →</text>
+    <text class="fill-blue" x="185" y="150" text-anchor="middle">More input</text>
+    <text class="fill-blue" x="185" y="170" text-anchor="middle">≠</text>
+    <text class="fill-blue" x="185" y="190" text-anchor="middle">More output</text>
+
+    <text class="muted" x="145" y="290" text-anchor="middle">You can't be "twice as rested"</text>
+  </g>
+
+  <!-- Panel 2: Rolled-up / Cyclical Dimensions -->
+  <g transform="translate(345, 65)">
+    <rect class="panel" x="0" y="0" width="290" height="310" rx="14"/>
+    <text class="panel-title" x="145" y="34" text-anchor="middle">2. Rolled Up Dimensions</text>
+    <text class="muted" x="145" y="56" text-anchor="middle">Closed loops instead of ∞ lines</text>
+
+    <!-- Rolled up circle / cycle -->
+    <path class="loop" d="M 145,95 A 68,68 0 1,1 82,138" marker-end="url(#m-purple)"/>
+
+    <!-- Cycle labels -->
+    <text class="fill-purple" x="145" y="84" text-anchor="middle" font-weight="600">Push / Work</text>
+    <text class="muted" x="232" y="168" text-anchor="start">Harvest</text>
+    <text class="fill-purple" x="145" y="254" text-anchor="middle" font-weight="600">Rest / Fast</text>
+    <text class="muted" x="58" y="168" text-anchor="end">Rebuild</text>
+
+    <text class="muted" x="145" y="290" text-anchor="middle">Walking forward brings you back around</text>
+  </g>
+
+  <!-- Panel 3: Uneven Terrain & Genetics -->
+  <g transform="translate(665, 65)">
+    <rect class="panel" x="0" y="0" width="290" height="310" rx="14"/>
+    <text class="panel-title" x="145" y="34" text-anchor="middle">3. Curved &amp; Uneven Terrain</text>
+    <text class="muted" x="145" y="56" text-anchor="middle">Slope depends on nature &amp; genetics</text>
+
+    <!-- Axes -->
+    <line class="axis" x1="40" y1="235" x2="255" y2="235"/>
+
+    <!-- Three terrain paths from start (45, 225) -->
+    <!-- Against genetics: cliff wall -->
+    <path class="curve-red" d="M 45,225 C 65,220 75,130 85,90"/>
+    <text class="fill-red" x="93" y="102">Against genetics</text>
+
+    <!-- Sweet spot climb: challenging but aligned -->
+    <path class="curve-green" d="M 45,225 Q 135,195 235,120" marker-end="url(#m-green)"/>
+    <text class="fill-green" x="145" y="160" text-anchor="middle" font-weight="600" transform="rotate(-29 145 160)">Aligned challenge</text>
+
+    <!-- Easy path: flat coasting -->
+    <path class="curve-gray" d="M 45,225 Q 145,223 245,220"/>
+    <text class="muted" x="195" y="210" text-anchor="middle">Too easy (coasting)</text>
+
+    <circle class="fill-green" cx="45" cy="225" r="4"/>
+
+    <text class="muted" x="145" y="290" text-anchor="middle">Climb uphill, but pick the right mountain</text>
+  </g>
+
+  <text class="caption" x="490" y="405" text-anchor="middle">Not every direction scales forever, some loop back on themselves, and some slopes fit our biology better than others.</text>
+</svg>
