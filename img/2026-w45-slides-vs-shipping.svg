@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 420" width="980" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Builder Reflex vs. Corporate Reflex</title>
+  <desc id="desc">Two panels comparing how startups/builders approach a technical problem versus how large enterprises often approach it. Left: Builder reflex goes directly from problem to architecture sketch, working prototype, and real feedback. Right: Corporate reflex loops through tool tables, platform politics, effort estimates, and slide decks before touching reality.</desc>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 15px; fill: #1f2328; }
+    .heading { font-size: 24px; font-weight: 700; }
+    .panel-title { font-size: 18px; font-weight: 700; }
+    .muted { fill: #59636e; font-size: 13.5px; }
+    .caption { fill: #59636e; font-size: 15px; }
+    .panel { fill: #f6f8fa; stroke: #d1d9e0; stroke-width: 2; }
+    .box-green { fill: #dafbe1; stroke: #1a7f37; stroke-width: 2; }
+    .box-blue { fill: #ddf4ff; stroke: #0969da; stroke-width: 2; }
+    .box-amber { fill: #fff8c5; stroke: #9a6700; stroke-width: 2; }
+    .box-red { fill: #ffebe9; stroke: #cf222e; stroke-width: 2; }
+    .vec-green { stroke: #1a7f37; stroke-width: 3; fill: none; stroke-linecap: round; }
+    .vec-amber { stroke: #9a6700; stroke-width: 2.5; stroke-dasharray: 5 4; fill: none; stroke-linecap: round; }
+    .fill-green { fill: #1a7f37; }
+    .fill-amber { fill: #9a6700; }
+    .fill-red { fill: #cf222e; }
+    .label-bold { font-weight: 600; font-size: 14.5px; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e6edf3; }
+      .muted, .caption { fill: #9198a1; }
+      .panel { fill: #151b23; stroke: #3d444d; }
+      .box-green { fill: #122d1f; stroke: #3fb950; }
+      .box-blue { fill: #0d233a; stroke: #4493f8; }
+      .box-amber { fill: #2b2111; stroke: #d29922; }
+      .box-red { fill: #311717; stroke: #f85149; }
+      .vec-green { stroke: #3fb950; }
+      .vec-amber { stroke: #d29922; }
+      .fill-green { fill: #3fb950; }
+      .fill-amber { fill: #d29922; }
+      .fill-red { fill: #f85149; }
+    }
+  </style>
+  <defs>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path class="fill-green" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+    <marker id="arr-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path class="fill-amber" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+  </defs>
+
+  <text class="heading" x="490" y="38" text-anchor="middle">Two Ways to Answer a Technical Question</text>
+
+  <!-- Panel 1: Builder Reflex -->
+  <g transform="translate(30, 62)">
+    <rect class="panel" x="0" y="0" width="440" height="305" rx="14"/>
+    <text class="panel-title" x="220" y="34" text-anchor="middle">1. The Builder Reflex (Start up)</text>
+    <text class="muted" x="220" y="55" text-anchor="middle">Optimize for truth &amp; working software</text>
+
+    <!-- Step 1 -->
+    <rect class="box-blue" x="45" y="78" width="350" height="42" rx="8"/>
+    <text class="label-bold" x="220" y="104" text-anchor="middle">Understand Problem &amp; Sketch Architecture</text>
+
+    <line class="vec-green" x1="220" y1="120" x2="220" y2="144" marker-end="url(#arr-green)"/>
+
+    <!-- Step 2 -->
+    <rect class="box-green" x="45" y="150" width="350" height="42" rx="8"/>
+    <text class="label-bold" x="220" y="176" text-anchor="middle">Build a Working Prototype / Live Demo</text>
+
+    <line class="vec-green" x1="220" y1="192" x2="220" y2="216" marker-end="url(#arr-green)"/>
+
+    <!-- Step 3 -->
+    <rect class="box-green" x="45" y="222" width="350" height="42" rx="8"/>
+    <text class="label-bold" x="220" y="248" text-anchor="middle">Test Against Reality &amp; Iterate</text>
+
+    <text class="fill-green" x="220" y="288" text-anchor="middle" font-weight="600">Energy goes into solving the problem</text>
+  </g>
+
+  <!-- Panel 2: Corporate Reflex -->
+  <g transform="translate(510, 62)">
+    <rect class="panel" x="0" y="0" width="440" height="305" rx="14"/>
+    <text class="panel-title" x="220" y="34" text-anchor="middle">2. The Coordination Reflex (Enterprise)</text>
+    <text class="muted" x="220" y="55" text-anchor="middle">Optimize for alignment, territory &amp; risk reduction</text>
+
+    <!-- Box A: Tool Tables -->
+    <rect class="box-amber" x="30" y="78" width="175" height="52" rx="8"/>
+    <text class="label-bold" x="117" y="100" text-anchor="middle">Fill Giant Tables</text>
+    <text class="muted" x="117" y="119" text-anchor="middle">("DevOps 8" tool lists)</text>
+
+    <!-- Box B: Platform Politics -->
+    <rect class="box-amber" x="235" y="78" width="175" height="52" rx="8"/>
+    <text class="label-bold" x="322" y="100" text-anchor="middle">Platform Politics</text>
+    <text class="muted" x="322" y="119" text-anchor="middle">("Must run on our stack")</text>
+
+    <!-- Arrows between A, B, C, D -->
+    <line class="vec-amber" x1="205" y1="104" x2="231" y2="104" marker-end="url(#arr-amber)"/>
+    <line class="vec-amber" x1="322" y1="130" x2="322" y2="158" marker-end="url(#arr-amber)"/>
+
+    <!-- Box C: Estimate & Staff -->
+    <rect class="box-amber" x="235" y="164" width="175" height="52" rx="8"/>
+    <text class="label-bold" x="322" y="186" text-anchor="middle">Staffing &amp; Estimates</text>
+    <text class="muted" x="322" y="205" text-anchor="middle">("Who else do we need?")</text>
+
+    <line class="vec-amber" x1="235" y1="190" x2="209" y2="190" marker-end="url(#arr-amber)"/>
+
+    <!-- Box D: 2 to 3 Slides -->
+    <rect class="box-red" x="30" y="164" width="175" height="52" rx="8"/>
+    <text class="label-bold" x="117" y="186" text-anchor="middle">2 to 3 Pitch Slides</text>
+    <text class="muted" x="117" y="205" text-anchor="middle">(Before anything works)</text>
+
+    <line class="vec-amber" x1="117" y1="164" x2="117" y2="134" marker-end="url(#arr-amber)"/>
+
+    <!-- Status bottom -->
+    <rect class="box-red" x="75" y="230" width="290" height="34" rx="6"/>
+    <text class="fill-red" x="220" y="252" text-anchor="middle" font-weight="600">Working code so far: 0 lines</text>
+
+    <text class="fill-amber" x="220" y="288" text-anchor="middle" font-weight="600">Energy goes into alignment &amp; optics</text>
+  </g>
+
+  <text class="caption" x="490" y="396" text-anchor="middle">When a hands on builder enters a slide first culture, the hardest part isn't the tech, it's the friction.</text>
+</svg>
