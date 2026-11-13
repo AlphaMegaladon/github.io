@@ -37,21 +37,28 @@
       </section>
 
       <section class="comments-section" id="comments">
-        <h2>Comments</h2>
-        <p class="comments-hint">Have a thought or question? Leave a comment below (powered by GitHub Issues).</p>
-        <div id="utterances-container"></div>
+        <h2>Reactions &amp; Comments</h2>
+        <p class="comments-hint">Liked this post or have a thought to share? Leave a reaction or comment below (powered by GitHub Discussions).</p>
+        <div id="giscus-container"></div>
         <script>
           (function() {
             var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
             var script = document.createElement('script');
-            script.src = 'https://utteranc.es/client.js';
-            script.setAttribute('repo', '{{ site.utterances_repo | default: "AlphaMegaladon/github.io" }}');
-            script.setAttribute('issue-term', 'pathname');
-            script.setAttribute('label', 'blog-comment');
-            script.setAttribute('theme', prefersDark ? 'github-dark' : 'github-light');
+            script.src = 'https://giscus.app/client.js';
+            script.setAttribute('data-repo', 'AlphaMegaladon/github.io');
+            script.setAttribute('data-repo-id', 'R_kgDOUzQNig');
+            script.setAttribute('data-category', 'General');
+            script.setAttribute('data-category-id', 'DIC_kwDOUzQNis4DLDLb');
+            script.setAttribute('data-mapping', 'pathname');
+            script.setAttribute('data-strict', '0');
+            script.setAttribute('data-reactions-enabled', '1');
+            script.setAttribute('data-emit-metadata', '0');
+            script.setAttribute('data-input-position', 'top');
+            script.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+            script.setAttribute('data-lang', 'en');
             script.setAttribute('crossorigin', 'anonymous');
             script.async = true;
-            document.getElementById('utterances-container').appendChild(script);
+            document.getElementById('giscus-container').appendChild(script);
           })();
         </script>
       </section>

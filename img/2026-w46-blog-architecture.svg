@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 410" width="980" height="410" role="img" aria-labelledby="title desc">
   <title id="title">Zero Backend Blog Architecture on GitHub Pages</title>
-  <desc id="desc">Diagram showing how the static Jekyll blog on GitHub Pages combines a custom layout and landing page with Utterances for GitHub Issue based comments and GoatCounter for cookie free analytics, requiring zero servers or databases to maintain.</desc>
+  <desc id="desc">Diagram showing how the static Jekyll blog on GitHub Pages combines a custom layout and landing page with Giscus for GitHub Discussions based reactions and comments and GoatCounter for cookie free analytics, requiring zero servers or databases to maintain.</desc>
   <style>
     text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 15px; fill: #1f2328; }
     .heading { font-size: 24px; font-weight: 700; }
@@ -66,23 +66,23 @@
     <text class="fill-blue" x="145" y="252" text-anchor="middle" font-weight="600">Static HTML via GitHub Pages</text>
   </g>
 
-  <!-- Middle Panel: Utterances Comments -->
+  <!-- Middle Panel: Giscus Reactions & Comments -->
   <g transform="translate(345, 65)">
     <rect class="panel" x="0" y="0" width="290" height="285" rx="14"/>
-    <text class="panel-title" x="145" y="34" text-anchor="middle">2. Utterances Comments</text>
-    <text class="muted" x="145" y="55" text-anchor="middle">Backed by GitHub Issues</text>
+    <text class="panel-title" x="145" y="34" text-anchor="middle">2. Giscus Reactions &amp; Chat</text>
+    <text class="muted" x="145" y="55" text-anchor="middle">Backed by GitHub Discussions</text>
 
     <rect class="box-green" x="28" y="78" width="234" height="46" rx="8"/>
-    <text class="label-bold" x="145" y="99" text-anchor="middle">Widget Below Every Post</text>
+    <text class="label-bold" x="145" y="99" text-anchor="middle">1 Click Post Likes &amp; Replies</text>
     <text class="muted" x="145" y="116" text-anchor="middle">Matches light &amp; dark theme</text>
 
     <line class="vec-green" x1="145" y1="124" x2="145" y2="148" marker-end="url(#arr-green)"/>
 
     <rect class="box-green" x="28" y="154" width="234" height="46" rx="8"/>
-    <text class="label-bold" x="145" y="175" text-anchor="middle">GitHub Issue per Post</text>
-    <text class="muted" x="145" y="192" text-anchor="middle">No external database or ads</text>
+    <text class="label-bold" x="145" y="175" text-anchor="middle">Discussion Thread per Post</text>
+    <text class="muted" x="145" y="192" text-anchor="middle">No external database or spam</text>
 
-    <text class="fill-green" x="145" y="252" text-anchor="middle" font-weight="600">Readers comment with GitHub</text>
+    <text class="fill-green" x="145" y="252" text-anchor="middle" font-weight="600">React or comment via GitHub</text>
   </g>
 
   <!-- Right Panel: GoatCounter Analytics -->

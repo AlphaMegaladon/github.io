@@ -21,7 +21,7 @@
       <span class="post-card-tag">Engineering</span>
     </div>
     <div class="post-card-title">2026-W46: Improving This Blog in 60 Minutes</div>
-    <p class="post-card-excerpt">Upgrading a bare Markdown repository into a real blog with a custom landing page, GitHub issue comments, and privacy friendly analytics inside the one hour Friday window.</p>
+    <p class="post-card-excerpt">Upgrading a bare Markdown repository into a real blog with a custom landing page, post reactions and comments, and privacy friendly analytics inside the one hour Friday window.</p>
   </a>
 
   <a class="post-card" href="posts/2026-w45.html">
