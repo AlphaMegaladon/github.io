@@ -1,1 +1,6 @@
 theme: jekyll-theme-primer
+title: "Martin's Weekly Log"
+description: "Personal blog & engineering log. One post every Friday, written in 60 minutes."
+utterances_repo: "AlphaMegaladon/github.io"
+goatcounter_code: "alphamegaladon"
+

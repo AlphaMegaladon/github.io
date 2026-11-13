@@ -3,6 +3,209 @@
 
 @import "{{ site.theme }}";
 
+/* Header & Navigation */
+.site-header {
+  border-bottom: 1px solid #d1d9e0;
+  background-color: #f6f8fa;
+  padding: 14px 0;
+}
+
+.site-header .container-lg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #1f2328 !important;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-nav {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.site-nav .nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #59636e;
+  text-decoration: none;
+}
+
+.site-nav .nav-link:hover {
+  color: #0969da;
+  text-decoration: underline;
+}
+
+/* Landing Page Hero */
+.hero-box {
+  background: linear-gradient(135deg, #f6f8fa 0%, #eef2f6 100%);
+  border: 1px solid #d1d9e0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.hero-banner-img {
+  width: 100%;
+  display: block;
+  max-height: 360px;
+  object-fit: cover;
+  border-bottom: 1px solid #d1d9e0;
+}
+
+.hero-content {
+  padding: 22px 28px 24px 28px;
+}
+
+.hero-box h1 {
+  border-bottom: none !important;
+  margin-top: 0 !important;
+  margin-bottom: 8px !important;
+  padding-bottom: 0 !important;
+  font-size: 1.85rem;
+}
+
+.hero-subtitle {
+  color: #59636e;
+  font-size: 1.05rem;
+  margin-bottom: 14px !important;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.badge-pill {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background-color: #ddf4ff;
+  color: #0969da;
+  border: 1px solid rgba(9, 105, 218, 0.2);
+}
+
+/* Post Cards Grid on Landing Page */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.post-card {
+  display: block;
+  border: 1px solid #d1d9e0;
+  border-radius: 10px;
+  padding: 18px 22px;
+  background-color: #ffffff;
+  text-decoration: none !important;
+  transition: transform 0.12s ease, border-color 0.12s ease, box-shadow 0.12s ease;
+}
+
+.post-card:hover {
+  border-color: #0969da;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(31, 35, 40, 0.08);
+}
+
+.post-card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: #59636e;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.post-card-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+  border: 1px solid #d1d9e0;
+  color: #59636e;
+}
+
+.post-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1f2328;
+  margin: 0 0 6px 0 !important;
+}
+
+.post-card:hover .post-card-title {
+  color: #0969da;
+}
+
+.post-card-excerpt {
+  color: #59636e;
+  font-size: 0.95rem;
+  margin: 0 !important;
+  line-height: 1.5;
+}
+
+/* Post Footer & Comments */
+.post-divider {
+  margin-top: 48px !important;
+  margin-bottom: 24px !important;
+}
+
+.post-footer-nav {
+  margin-bottom: 32px;
+}
+
+.back-home-btn {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #d1d9e0;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+  color: #1f2328 !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+}
+
+.back-home-btn:hover {
+  border-color: #0969da;
+  color: #0969da !important;
+}
+
+.comments-section {
+  margin-top: 32px;
+  padding-top: 8px;
+}
+
+.comments-hint {
+  color: #59636e;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+/* Site Footer */
+.site-footer {
+  border-top: 1px solid #d1d9e0;
+  padding-top: 20px;
+  color: #59636e;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
@@ -16,6 +219,85 @@
   a,
   .markdown-body a {
     color: #4493f8;
+  }
+
+  .site-header {
+    background-color: #151b23;
+    border-bottom-color: #30363d;
+  }
+
+  .site-brand {
+    color: #e6edf3 !important;
+  }
+
+  .site-nav .nav-link {
+    color: #9198a1;
+  }
+
+  .site-nav .nav-link:hover {
+    color: #4493f8;
+  }
+
+  .hero-box {
+    background: linear-gradient(135deg, #151b23 0%, #1c2430 100%);
+    border-color: #30363d;
+  }
+
+  .hero-banner-img {
+    border-bottom-color: #30363d;
+  }
+
+  .hero-subtitle,
+  .post-card-meta,
+  .post-card-excerpt,
+  .comments-hint,
+  .site-footer {
+    color: #9198a1;
+  }
+
+  .badge-pill {
+    background-color: #0d233a;
+    color: #4493f8;
+    border-color: rgba(68, 147, 248, 0.3);
+  }
+
+  .post-card {
+    background-color: #151b23;
+    border-color: #30363d;
+  }
+
+  .post-card:hover {
+    border-color: #4493f8;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  }
+
+  .post-card-title {
+    color: #e6edf3;
+  }
+
+  .post-card:hover .post-card-title {
+    color: #4493f8;
+  }
+
+  .post-card-tag {
+    background-color: #0d1117;
+    border-color: #30363d;
+    color: #9198a1;
+  }
+
+  .back-home-btn {
+    background-color: #151b23;
+    border-color: #30363d;
+    color: #e6edf3 !important;
+  }
+
+  .back-home-btn:hover {
+    border-color: #4493f8;
+    color: #4493f8 !important;
+  }
+
+  .site-footer {
+    border-top-color: #30363d;
   }
 
   .markdown-body h1,
@@ -60,3 +342,4 @@
     border-color: #30363d;
   }
 }
+

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 410" width="980" height="410" role="img" aria-labelledby="title desc">
+  <title id="title">Zero Backend Blog Architecture on GitHub Pages</title>
+  <desc id="desc">Diagram showing how the static Jekyll blog on GitHub Pages combines a custom layout and landing page with Utterances for GitHub Issue based comments and GoatCounter for cookie free analytics, requiring zero servers or databases to maintain.</desc>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 15px; fill: #1f2328; }
+    .heading { font-size: 24px; font-weight: 700; }
+    .panel-title { font-size: 17.5px; font-weight: 700; }
+    .muted { fill: #59636e; font-size: 13.5px; }
+    .caption { fill: #59636e; font-size: 15px; }
+    .panel { fill: #f6f8fa; stroke: #d1d9e0; stroke-width: 2; }
+    .box-blue { fill: #ddf4ff; stroke: #0969da; stroke-width: 2; }
+    .box-green { fill: #dafbe1; stroke: #1a7f37; stroke-width: 2; }
+    .box-purple { fill: #fbefff; stroke: #8250df; stroke-width: 2; }
+    .vec-blue { stroke: #0969da; stroke-width: 3; fill: none; stroke-linecap: round; }
+    .vec-green { stroke: #1a7f37; stroke-width: 3; fill: none; stroke-linecap: round; }
+    .vec-purple { stroke: #8250df; stroke-width: 3; fill: none; stroke-linecap: round; }
+    .fill-blue { fill: #0969da; }
+    .fill-green { fill: #1a7f37; }
+    .fill-purple { fill: #8250df; }
+    .label-bold { font-weight: 600; font-size: 14.5px; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e6edf3; }
+      .muted, .caption { fill: #9198a1; }
+      .panel { fill: #151b23; stroke: #3d444d; }
+      .box-blue { fill: #0d233a; stroke: #4493f8; }
+      .box-green { fill: #122d1f; stroke: #3fb950; }
+      .box-purple { fill: #27173a; stroke: #a371f7; }
+      .vec-blue { stroke: #4493f8; }
+      .vec-green { stroke: #3fb950; }
+      .vec-purple { stroke: #a371f7; }
+      .fill-blue { fill: #4493f8; }
+      .fill-green { fill: #3fb950; }
+      .fill-purple { fill: #a371f7; }
+    }
+  </style>
+  <defs>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path class="fill-blue" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path class="fill-green" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+    <marker id="arr-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path class="fill-purple" d="M0,0 L10,5 L0,10 z"/>
+    </marker>
+  </defs>
+
+  <text class="heading" x="490" y="38" text-anchor="middle">Upgrading the Blog Without Adding a Backend</text>
+
+  <!-- Left Panel: Custom Jekyll Layout -->
+  <g transform="translate(25, 65)">
+    <rect class="panel" x="0" y="0" width="290" height="285" rx="14"/>
+    <text class="panel-title" x="145" y="34" text-anchor="middle">1. Custom Jekyll Layout</text>
+    <text class="muted" x="145" y="55" text-anchor="middle">_layouts/default.html + style.scss</text>
+
+    <rect class="box-blue" x="28" y="78" width="234" height="46" rx="8"/>
+    <text class="label-bold" x="145" y="99" text-anchor="middle">Hero Box &amp; Navigation</text>
+    <text class="muted" x="145" y="116" text-anchor="middle">Header bar + back links</text>
+
+    <line class="vec-blue" x1="145" y1="124" x2="145" y2="148" marker-end="url(#arr-blue)"/>
+
+    <rect class="box-blue" x="28" y="154" width="234" height="46" rx="8"/>
+    <text class="label-bold" x="145" y="175" text-anchor="middle">Post Cards &amp; Dark Mode</text>
+    <text class="muted" x="145" y="192" text-anchor="middle">Dates, tags, and summaries</text>
+
+    <text class="fill-blue" x="145" y="252" text-anchor="middle" font-weight="600">Static HTML via GitHub Pages</text>
+  </g>
+
+  <!-- Middle Panel: Utterances Comments -->
+  <g transform="translate(345, 65)">
+    <rect class="panel" x="0" y="0" width="290" height="285" rx="14"/>
+    <text class="panel-title" x="145" y="34" text-anchor="middle">2. Utterances Comments</text>
+    <text class="muted" x="145" y="55" text-anchor="middle">Backed by GitHub Issues</text>
+
+    <rect class="box-green" x="28" y="78" width="234" height="46" rx="8"/>
+    <text class="label-bold" x="145" y="99" text-anchor="middle">Widget Below Every Post</text>
+    <text class="muted" x="145" y="116" text-anchor="middle">Matches light &amp; dark theme</text>
+
+    <line class="vec-green" x1="145" y1="124" x2="145" y2="148" marker-end="url(#arr-green)"/>
+
+    <rect class="box-green" x="28" y="154" width="234" height="46" rx="8"/>
+    <text class="label-bold" x="145" y="175" text-anchor="middle">GitHub Issue per Post</text>
+    <text class="muted" x="145" y="192" text-anchor="middle">No external database or ads</text>
+
+    <text class="fill-green" x="145" y="252" text-anchor="middle" font-weight="600">Readers comment with GitHub</text>
+  </g>
+
+  <!-- Right Panel: GoatCounter Analytics -->
+  <g transform="translate(665, 65)">
+    <rect class="panel" x="0" y="0" width="290" height="285" rx="14"/>
+    <text class="panel-title" x="145" y="34" text-anchor="middle">3. GoatCounter Tracking</text>
+    <text class="muted" x="145" y="55" text-anchor="middle">Privacy first web analytics</text>
+
+    <rect class="box-purple" x="28" y="78" width="234" height="46" rx="8"/>
+    <text class="label-bold" x="145" y="99" text-anchor="middle">Lightweight Script Tag</text>
+    <text class="muted" x="145" y="116" text-anchor="middle">Loaded asynchronously in head</text>
+
+    <line class="vec-purple" x1="145" y1="124" x2="145" y2="148" marker-end="url(#arr-purple)"/>
+
+    <rect class="box-purple" x="28" y="154" width="234" height="46" rx="8"/>
+    <text class="label-bold" x="145" y="175" text-anchor="middle">Pageviews &amp; Referrers</text>
+    <text class="muted" x="145" y="192" text-anchor="middle">No cookies or consent banners</text>
+
+    <text class="fill-purple" x="145" y="252" text-anchor="middle" font-weight="600">Zero personal data tracking</text>
+  </g>
+
+  <text class="caption" x="490" y="384" text-anchor="middle">All three upgrades keep the repository 100% static while turning raw Markdown files into a complete blog.</text>
+</svg>
