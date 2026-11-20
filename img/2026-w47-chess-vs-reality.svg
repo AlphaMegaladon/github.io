@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 430" width="980" height="430" role="img" aria-labelledby="title desc">
+  <title id="title">Where the Chess Analogy Breaks: Closed Game vs. Open World</title>
+  <desc id="desc">Two panels comparing tournament chess with real-world work and engineering. Left: Chess is a closed 64-square game with complete information, a single eval bar objective, engines banned during play, and humans obsolete against machines. Right: The real world has messy incomplete context, multi-dimensional trade-offs, AI permanently switched on during real work, and humans essential for framing problems, judgment, and accountability.</desc>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 14.5px; fill: #1f2328; }
+    .heading { font-size: 23px; font-weight: 700; }
+    .panel-title { font-size: 18px; font-weight: 700; }
+    .muted { fill: #59636e; font-size: 13px; }
+    .caption { fill: #59636e; font-size: 14.5px; }
+    .panel { fill: #f6f8fa; stroke: #d1d9e0; stroke-width: 2; }
+    .box-blue { fill: #ddf4ff; stroke: #0969da; stroke-width: 1.8; }
+    .box-green { fill: #dafbe1; stroke: #1a7f37; stroke-width: 1.8; }
+    .box-amber { fill: #fff8c5; stroke: #9a6700; stroke-width: 1.8; }
+    .box-red { fill: #ffebe9; stroke: #cf222e; stroke-width: 1.8; }
+    .fill-green { fill: #1a7f37; }
+    .fill-amber { fill: #9a6700; }
+    .fill-red { fill: #cf222e; }
+    .label-bold { font-weight: 700; font-size: 14px; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e6edf3; }
+      .muted, .caption { fill: #9198a1; }
+      .panel { fill: #151b23; stroke: #3d444d; }
+      .box-blue { fill: #0d233a; stroke: #4493f8; }
+      .box-green { fill: #122d1f; stroke: #3fb950; }
+      .box-amber { fill: #2b2111; stroke: #d29922; }
+      .box-red { fill: #311717; stroke: #f85149; }
+      .fill-green { fill: #3fb950; }
+      .fill-amber { fill: #d29922; }
+      .fill-red { fill: #f85149; }
+    }
+  </style>
+
+  <text class="heading" x="490" y="36" text-anchor="middle">Where the Chess Analogy Breaks</text>
+
+  <!-- Left Panel: Chess -->
+  <g transform="translate(25, 58)">
+    <rect class="panel" x="0" y="0" width="445" height="320" rx="14"/>
+    <text class="panel-title" x="222" y="32" text-anchor="middle">1. Chess: A Closed Game</text>
+    <text class="muted" x="222" y="52" text-anchor="middle">Solved rules, clear win condition, isolated play</text>
+
+    <rect class="box-blue" x="32" y="72" width="381" height="48" rx="8"/>
+    <text class="label-bold" x="222" y="92" text-anchor="middle">64 Squares &amp; Perfect Information</text>
+    <text class="muted" x="222" y="110" text-anchor="middle">Fixed rules, zero hidden state or ambiguity</text>
+
+    <rect class="box-blue" x="32" y="130" width="381" height="48" rx="8"/>
+    <text class="label-bold" x="222" y="150" text-anchor="middle">Single Objective Function</text>
+    <text class="muted" x="222" y="168" text-anchor="middle">Checkmate, reducible to a single +2.4 eval bar</text>
+
+    <rect class="box-amber" x="32" y="188" width="381" height="48" rx="8"/>
+    <text class="label-bold" x="222" y="208" text-anchor="middle">Engines Banned at the Board</text>
+    <text class="muted" x="222" y="226" text-anchor="middle">You prepare with AI at home, then play alone</text>
+
+    <rect class="box-red" x="32" y="246" width="381" height="48" rx="8"/>
+    <text class="label-bold fill-red" x="222" y="266" text-anchor="middle">Human Performance vs. Machine: Irrelevant</text>
+    <text class="muted" x="222" y="284" text-anchor="middle">Preserved as an artificial human-only competition</text>
+  </g>
+
+  <!-- Right Panel: Real World -->
+  <g transform="translate(510, 58)">
+    <rect class="panel" x="0" y="0" width="445" height="320" rx="14"/>
+    <text class="panel-title" x="222" y="32" text-anchor="middle">2. Real World: An Open System</text>
+    <text class="muted" x="222" y="52" text-anchor="middle">Unclear goals, messy reality, AI stays switched on</text>
+
+    <rect class="box-blue" x="32" y="72" width="381" height="48" rx="8"/>
+    <text class="label-bold" x="222" y="92" text-anchor="middle">Incomplete &amp; Shifting Context</text>
+    <text class="muted" x="222" y="110" text-anchor="middle">Human politics, edge cases &amp; unwritten constraints</text>
+
+    <rect class="box-blue" x="32" y="130" width="381" height="48" rx="8"/>
+    <text class="label-bold" x="222" y="150" text-anchor="middle">No Universal Eval Bar</text>
+    <text class="muted" x="222" y="168" text-anchor="middle">Defining the right problem is half the battle</text>
+
+    <rect class="box-green" x="32" y="188" width="381" height="48" rx="8"/>
+    <text class="label-bold" x="222" y="208" text-anchor="middle">Engine Stays On in Production</text>
+    <text class="muted" x="222" y="226" text-anchor="middle">Real work is "Centaur mode": human + AI live</text>
+
+    <rect class="box-green" x="32" y="246" width="381" height="48" rx="8"/>
+    <text class="label-bold fill-green" x="222" y="266" text-anchor="middle">Human Role: Steering &amp; Accountability</text>
+    <text class="muted" x="222" y="284" text-anchor="middle">Understanding the system deeply enough to judge</text>
+  </g>
+
+  <text class="caption" x="490" y="406" text-anchor="middle">In chess, machines replaced human move quality. In an open world, humans still have to steer the machine.</text>
+</svg>

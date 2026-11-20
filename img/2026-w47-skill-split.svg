@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 450" width="980" height="450" role="img" aria-labelledby="title desc">
+  <title id="title">What Happens When Superhuman AI Becomes Free for Everyone</title>
+  <desc id="desc">Left panel shows human skill over time with AI/engines: a dashed biological ceiling at the top (Fischer, Kasparov, Carlsen), a steep green curve of active learners reaching near the ceiling much younger, a flat blue line for the average majority, and a falling red curve for blind consumers whose own skill atrophies. Right panel summarizes the three structural effects: bounded peak but wider and younger top, super-human leverage through active sparring, and the outsourcing trap.</desc>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 14.5px; fill: #1f2328; }
+    .heading { font-size: 23px; font-weight: 700; }
+    .panel-title { font-size: 17.5px; font-weight: 700; }
+    .muted { fill: #59636e; font-size: 13px; }
+    .caption { fill: #59636e; font-size: 14.5px; }
+    .axis-label { fill: #59636e; font-size: 12.5px; font-weight: 600; }
+    .panel { fill: #f6f8fa; stroke: #d1d9e0; stroke-width: 2; }
+    .axis { stroke: #8c959f; stroke-width: 2; fill: none; }
+    .ceiling { stroke: #9a6700; stroke-width: 2; stroke-dasharray: 6 5; fill: none; }
+    .curve-green { stroke: #1a7f37; stroke-width: 4; fill: none; stroke-linecap: round; }
+    .curve-blue { stroke: #0969da; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+    .curve-red { stroke: #cf222e; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+    .fill-green { fill: #1a7f37; }
+    .fill-blue { fill: #0969da; }
+    .fill-amber { fill: #9a6700; }
+    .fill-red { fill: #cf222e; }
+    .box-amber { fill: #fff8c5; stroke: #9a6700; stroke-width: 1.8; }
+    .box-green { fill: #dafbe1; stroke: #1a7f37; stroke-width: 1.8; }
+    .box-red { fill: #ffebe9; stroke: #cf222e; stroke-width: 1.8; }
+    .card-title { font-weight: 700; font-size: 14px; }
+    .card-sub { fill: #59636e; font-size: 12.5px; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e6edf3; }
+      .muted, .caption, .axis-label, .card-sub { fill: #9198a1; }
+      .panel { fill: #151b23; stroke: #3d444d; }
+      .axis { stroke: #656d76; }
+      .ceiling { stroke: #d29922; }
+      .curve-green { stroke: #3fb950; }
+      .curve-blue { stroke: #4493f8; }
+      .curve-red { stroke: #f85149; }
+      .fill-green { fill: #3fb950; }
+      .fill-blue { fill: #4493f8; }
+      .fill-amber { fill: #d29922; }
+      .fill-red { fill: #f85149; }
+      .box-amber { fill: #2b2111; stroke: #d29922; }
+      .box-green { fill: #122d1f; stroke: #3fb950; }
+      .box-red { fill: #311717; stroke: #f85149; }
+    }
+  </style>
+
+  <text class="heading" x="490" y="36" text-anchor="middle">When Superhuman Knowledge Is Democratized: The Great Split</text>
+
+  <!-- Left Panel: Skill Curves + Ceiling -->
+  <g transform="translate(25, 58)">
+    <rect class="panel" x="0" y="0" width="565" height="340" rx="14"/>
+    <text class="panel-title" x="282" y="30" text-anchor="middle">Individual Skill Trajectory Over Time</text>
+    <text class="muted" x="282" y="50" text-anchor="middle">Same free tool, three completely different outcomes</text>
+
+    <!-- Axes -->
+    <line class="axis" x1="72" y1="78" x2="72" y2="306"/>
+    <line class="axis" x1="72" y1="306" x2="540" y2="306"/>
+    <text class="axis-label" x="59" y="192" text-anchor="middle" transform="rotate(-90 59 192)">Own Human Capability</text>
+    <text class="axis-label" x="306" y="327" text-anchor="middle">Time Using Engines / LLMs →</text>
+
+    <!-- Biological Ceiling -->
+    <line class="ceiling" x1="78" y1="96" x2="536" y2="96"/>
+    <text class="fill-amber" x="307" y="86" text-anchor="middle" font-size="12.5" font-weight="600">Biological Ceiling (Intelligence Limit: Fischer · Kasparov · Carlsen)</text>
+
+    <!-- Curve 1: Active Learners (Green) -->
+    <path class="curve-green" d="M 78,228 C 125,215 160,115 265,106 C 350,101 450,100 535,100"/>
+    <text class="fill-green" x="248" y="132" font-weight="700">1. Active Sparring ("Super-Learners")</text>
+    <text class="muted" x="248" y="149">Ask "why" &amp; fix chunks → faster, younger climb</text>
+
+    <!-- Curve 2: Average Majority (Blue) -->
+    <path class="curve-blue" d="M 78,228 C 200,226 360,224 535,222"/>
+    <text class="fill-blue" x="248" y="192" font-weight="700">2. The Average Majority</text>
+    <text class="muted" x="248" y="209">Surface-level usage → own skill stays roughly flat</text>
+
+    <!-- Curve 3: Blind Consumers (Red) -->
+    <path class="curve-red" d="M 78,228 C 120,235 165,282 260,292 C 350,297 450,298 535,298"/>
+    <text class="fill-red" x="248" y="260" font-weight="700">3. Blind Consumers</text>
+    <text class="muted" x="248" y="277">Buy every output blindly → own thinking atrophies</text>
+
+    <!-- Start point dot -->
+    <circle class="fill-blue" cx="78" cy="228" r="4.5"/>
+  </g>
+
+  <!-- Right Panel: Key Takeaways -->
+  <g transform="translate(610, 58)">
+    <rect class="panel" x="0" y="0" width="345" height="340" rx="14"/>
+    <text class="panel-title" x="172" y="30" text-anchor="middle">What Changed in Practice</text>
+    <text class="muted" x="172" y="50" text-anchor="middle">First in chess, now everywhere</text>
+
+    <!-- Card 1 -->
+    <rect class="box-amber" x="22" y="72" width="301" height="74" rx="9"/>
+    <text class="card-title fill-amber" x="38" y="96">Bounded Peak, Broader Top</text>
+    <text class="card-sub" x="38" y="116">Peak human genius may still be capped,</text>
+    <text class="card-sub" x="38" y="133">but far more &amp; younger talents reach it.</text>
+
+    <!-- Card 2 -->
+    <rect class="box-green" x="22" y="160" width="301" height="74" rx="9"/>
+    <text class="card-title fill-green" x="38" y="184">Compounding for Thinkers</text>
+    <text class="card-sub" x="38" y="204">Using AI as a relentless coach turns</text>
+    <text class="card-sub" x="38" y="221">curious builders into "super-humans."</text>
+
+    <!-- Card 3 -->
+    <rect class="box-red" x="22" y="248" width="301" height="74" rx="9"/>
+    <text class="card-title fill-red" x="38" y="272">The Trap of Easy Answers</text>
+    <text class="card-sub" x="38" y="292">Outsourcing calculation to the eval bar</text>
+    <text class="card-sub" x="38" y="309">or prompt box makes you replaceable.</text>
+  </g>
+
+  <text class="caption" x="490" y="426" text-anchor="middle">Free access to superhuman answers doesn't lift everyone equally: it amplifies how you choose to learn.</text>
+</svg>

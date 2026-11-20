@@ -15,6 +15,15 @@
 ## Posts
 
 <div class="post-list">
+  <a class="post-card" href="posts/2026-w47.html">
+    <div class="post-card-meta">
+      <span>2026-11-20 · Week 47</span>
+      <span class="post-card-tag">AI &amp; Learning</span>
+    </div>
+    <div class="post-card-title">2026-W47: What Chess Engines Teach Us About LLMs</div>
+    <p class="post-card-excerpt">Chess already ran the superhuman AI experiment years ago: radical democratization of knowledge, a sharp split between super-learners and blind consumers, and where the analogy breaks in the real world.</p>
+  </a>
+
   <a class="post-card" href="posts/2026-w46.html">
     <div class="post-card-meta">
       <span>2026-11-13 · Week 46</span>
