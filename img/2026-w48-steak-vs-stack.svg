@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 420" width="980" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Bundled Meat Package vs. Targeted Micronutrients</title>
+  <desc id="desc">Two panels comparing getting nutrients from red and processed meat versus a home-cooked vegetarian base plus targeted supplements. Left: Meat bundles protein, creatine, and B12 together with WHO Group 1 and Group 2A cancer classifications. Right: 90% fresh home-cooked vegetarian meals plus isolated creatine, B12, D3+K2, and minerals without the unwanted baggage.</desc>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 14.5px; fill: #1f2328; }
+    .heading { font-size: 23px; font-weight: 700; }
+    .panel-title { font-size: 18px; font-weight: 700; }
+    .muted { fill: #59636e; font-size: 13px; }
+    .caption { fill: #59636e; font-size: 14.5px; }
+    .panel { fill: #f6f8fa; stroke: #d1d9e0; stroke-width: 2; }
+    .box-green { fill: #dafbe1; stroke: #1a7f37; stroke-width: 1.8; }
+    .box-blue { fill: #ddf4ff; stroke: #0969da; stroke-width: 1.8; }
+    .box-amber { fill: #fff8c5; stroke: #9a6700; stroke-width: 1.8; }
+    .box-red { fill: #ffebe9; stroke: #cf222e; stroke-width: 1.8; }
+    .fill-green { fill: #1a7f37; }
+    .fill-red { fill: #cf222e; }
+    .label-bold { font-weight: 700; font-size: 14px; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e6edf3; }
+      .muted, .caption { fill: #9198a1; }
+      .panel { fill: #151b23; stroke: #3d444d; }
+      .box-green { fill: #122d1f; stroke: #3fb950; }
+      .box-blue { fill: #0d233a; stroke: #4493f8; }
+      .box-amber { fill: #2b2111; stroke: #d29922; }
+      .box-red { fill: #311717; stroke: #f85149; }
+      .fill-green { fill: #3fb950; }
+      .fill-red { fill: #f85149; }
+    }
+  </style>
+
+  <text class="heading" x="490" y="36" text-anchor="middle">Why Not "Just Eat Meat"? Unbundling the Package</text>
+
+  <!-- Left Panel: The Meat Bundle -->
+  <g transform="translate(25, 58)">
+    <rect class="panel" x="0" y="0" width="445" height="312" rx="14"/>
+    <text class="panel-title" x="222" y="32" text-anchor="middle">1. The "Just Eat a Steak" Bundle</text>
+    <text class="muted" x="222" y="52" text-anchor="middle">Useful nutrients tied to unwanted long-term risks</text>
+
+    <rect class="box-green" x="32" y="72" width="381" height="50" rx="8"/>
+    <text class="label-bold" x="222" y="93" text-anchor="middle">What You Want</text>
+    <text class="muted" x="222" y="111" text-anchor="middle">Creatine · Vitamin B12 · Protein · Collagen</text>
+
+    <rect class="box-red" x="32" y="134" width="381" height="56" rx="8"/>
+    <text class="label-bold fill-red" x="222" y="155" text-anchor="middle">WHO / IARC Cancer Classification</text>
+    <text class="muted" x="222" y="175" text-anchor="middle">Processed meat: Group 1 · Red meat: Group 2A</text>
+
+    <rect class="box-amber" x="32" y="202" width="381" height="56" rx="8"/>
+    <text class="label-bold" x="222" y="223" text-anchor="middle">Epidemiological &amp; Ethical Baggage</text>
+    <text class="muted" x="222" y="243" text-anchor="middle">~8 to 14% higher observed cancer risk + factory farming</text>
+
+    <text class="fill-red" x="222" y="288" text-anchor="middle" font-weight="600">You cannot opt out of the side effects</text>
+  </g>
+
+  <!-- Right Panel: Targeted Engineering -->
+  <g transform="translate(510, 58)">
+    <rect class="panel" x="0" y="0" width="445" height="312" rx="14"/>
+    <text class="panel-title" x="222" y="32" text-anchor="middle">2. Clean Base + Targeted Building Blocks</text>
+    <text class="muted" x="222" y="52" text-anchor="middle">Whole-food foundation plus isolated molecules</text>
+
+    <rect class="box-green" x="32" y="72" width="381" height="50" rx="8"/>
+    <text class="label-bold" x="222" y="93" text-anchor="middle">90% Fresh Home-Cooked Vegetarian Base</text>
+    <text class="muted" x="222" y="111" text-anchor="middle">Vegetables, berries, legumes, tap water, 12h eating window</text>
+
+    <rect class="box-blue" x="32" y="134" width="381" height="56" rx="8"/>
+    <text class="label-bold" x="222" y="155" text-anchor="middle">Isolated Missing Nutrients (Not Drugs)</text>
+    <text class="muted" x="222" y="175" text-anchor="middle">Creatine · B12 · D3+K2 · Magnesium · Whey · Collagen</text>
+
+    <rect class="box-green" x="32" y="202" width="381" height="56" rx="8"/>
+    <text class="label-bold" x="222" y="223" text-anchor="middle">Blood-Work &amp; N=1 Feedback Loop</text>
+    <text class="muted" x="222" y="243" text-anchor="middle">Keep what helps, drop or pause what causes side effects</text>
+
+    <text class="fill-green" x="222" y="288" text-anchor="middle" font-weight="600">Keep the building blocks, skip the carcinogen bundle</text>
+  </g>
+
+  <text class="caption" x="490" y="398" text-anchor="middle">Supplements aren't a replacement for real food; they let you unbundle essential nutrients from unwanted risks.</text>
+</svg>

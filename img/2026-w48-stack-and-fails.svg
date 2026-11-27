@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 455" width="980" height="455" role="img" aria-labelledby="title desc">
+  <title id="title">My Current Supplement Stack and Why Two Experiments Failed</title>
+  <desc id="desc">Left panel lists the current active stack (Creatine, Collagen + Vitamin C, Whey, Raw Cacao, Vitamin B12, Magnesium Bisglycinate, Vitamin D3+K2, and paused Ubiquinol). Right panel shows the inverted-U acetylcholine curve explaining why 250 mg CDP-choline caused brain fog, plus why excess psyllium husks blocked electrolyte absorption and triggered migraine.</desc>
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 14px; fill: #1f2328; }
+    .heading { font-size: 23px; font-weight: 700; }
+    .panel-title { font-size: 17.5px; font-weight: 700; }
+    .muted { fill: #59636e; font-size: 12.5px; }
+    .caption { fill: #59636e; font-size: 14.5px; }
+    .axis-label { fill: #59636e; font-size: 12px; font-weight: 600; }
+    .panel { fill: #f6f8fa; stroke: #d1d9e0; stroke-width: 2; }
+    .axis { stroke: #8c959f; stroke-width: 2; fill: none; }
+    .box-green { fill: #dafbe1; stroke: #1a7f37; stroke-width: 1.6; }
+    .box-blue { fill: #ddf4ff; stroke: #0969da; stroke-width: 1.6; }
+    .box-amber { fill: #fff8c5; stroke: #9a6700; stroke-width: 1.6; }
+    .box-red { fill: #ffebe9; stroke: #cf222e; stroke-width: 1.6; }
+    .curve-blue { stroke: #0969da; stroke-width: 3.5; fill: none; stroke-linecap: round; }
+    .fill-green { fill: #1a7f37; }
+    .fill-blue { fill: #0969da; }
+    .fill-amber { fill: #9a6700; }
+    .fill-red { fill: #cf222e; }
+    .item-title { font-weight: 700; font-size: 13.5px; }
+    @media (prefers-color-scheme: dark) {
+      text { fill: #e6edf3; }
+      .muted, .caption, .axis-label { fill: #9198a1; }
+      .panel { fill: #151b23; stroke: #3d444d; }
+      .axis { stroke: #656d76; }
+      .box-green { fill: #122d1f; stroke: #3fb950; }
+      .box-blue { fill: #0d233a; stroke: #4493f8; }
+      .box-amber { fill: #2b2111; stroke: #d29922; }
+      .box-red { fill: #311717; stroke: #f85149; }
+      .curve-blue { stroke: #4493f8; }
+      .fill-green { fill: #3fb950; }
+      .fill-blue { fill: #4493f8; }
+      .fill-amber { fill: #d29922; }
+      .fill-red { fill: #f85149; }
+    }
+  </style>
+
+  <text class="heading" x="490" y="35" text-anchor="middle">Current N=1 Stack vs. When "More Is Better" Backfires</text>
+
+  <!-- Left Panel: Active & Paused Stack -->
+  <g transform="translate(25, 56)">
+    <rect class="panel" x="0" y="0" width="455" height="350" rx="14"/>
+    <text class="panel-title" x="227" y="30" text-anchor="middle">1. What Stays in My Routine</text>
+    <text class="muted" x="227" y="49" text-anchor="middle">Targeted daily &amp; weekly building blocks at age 33</text>
+
+    <rect class="box-green" x="24" y="66" width="407" height="50" rx="8"/>
+    <text class="item-title" x="38" y="87">Morning Coffee &amp; Tissue Support</text>
+    <text class="muted" x="38" y="105">Creatine + Collagen peptides (with Vit C) + ~30g Whey</text>
+
+    <rect class="box-green" x="24" y="126" width="407" height="50" rx="8"/>
+    <text class="item-title" x="38" y="147">Micronutrient Essentials</text>
+    <text class="muted" x="38" y="165">Vitamin B12 (Mon/Wed/Fri) + Vitamin D3 &amp; K2</text>
+
+    <rect class="box-blue" x="24" y="186" width="407" height="50" rx="8"/>
+    <text class="item-title" x="38" y="207">Minerals &amp; Polyphenols</text>
+    <text class="muted" x="38" y="225">Magnesium bisglycinate (softened water!) + 2 tsp raw cacao</text>
+
+    <rect class="box-amber" x="24" y="246" width="407" height="50" rx="8"/>
+    <text class="item-title fill-amber" x="38" y="267">Paused for Now: Ubiquinol (CoQ10)</text>
+    <text class="muted" x="38" y="285">Likely overkill at 33, saved for future family planning</text>
+
+    <text class="fill-green" x="227" y="326" text-anchor="middle" font-weight="600">Goal: fill real gaps without messing with hormones</text>
+  </g>
+
+  <!-- Right Panel: The Two Fails & Inverted-U Curve -->
+  <g transform="translate(500, 56)">
+    <rect class="panel" x="0" y="0" width="455" height="350" rx="14"/>
+    <text class="panel-title" x="227" y="30" text-anchor="middle">2. My Two Fails: Biology Isn't Linear</text>
+    <text class="muted" x="227" y="49" text-anchor="middle">Why copying a supplement blindly can make you feel worse</text>
+
+    <!-- Mini Inverted-U Chart for CDP-Choline -->
+    <line class="axis" x1="58" y1="74" x2="58" y2="205"/>
+    <line class="axis" x1="58" y1="205" x2="422" y2="205"/>
+    <text class="axis-label" x="44" y="140" text-anchor="middle" transform="rotate(-90 44 140)">Mental Clarity</text>
+    <text class="axis-label" x="240" y="223" text-anchor="middle">Brain Acetylcholine Level (CDP-Choline) →</text>
+
+    <path class="curve-blue" d="M 70,192 C 125,180 175,86 235,86 C 295,86 350,180 410,194"/>
+
+    <!-- Wife dot (rising into peak) -->
+    <circle class="fill-green" cx="235" cy="86" r="5.5"/>
+    <text class="fill-green" x="235" y="73" text-anchor="middle" font-weight="700" font-size="12.5">Sweet Spot (Wife: great!)</text>
+
+    <!-- Martin dot (pushed over peak into brain fog) -->
+    <circle class="fill-red" cx="322" cy="134" r="5.5"/>
+    <text class="fill-red" x="334" y="128" text-anchor="start" font-weight="700" font-size="12.5">+250mg (me):</text>
+    <text class="fill-red" x="334" y="143" text-anchor="start" font-weight="700" font-size="12.5">Brain Fog!</text>
+
+    <!-- Fail 2 Box: Psyllium Husks -->
+    <rect class="box-red" x="24" y="242" width="407" height="62" rx="8"/>
+    <text class="item-title fill-red" x="38" y="264">Fail #2: Excess Psyllium Husks → Migraine</text>
+    <text class="muted" x="38" y="282">Dense fiber gel trapped water, salt &amp; nutrients in the gut,</text>
+    <text class="muted" x="38" y="297">triggering electrolyte-depletion headaches. Paused.</text>
+
+    <text class="fill-red" x="227" y="328" text-anchor="middle" font-weight="600">Same household, same bottle, opposite biological effect</text>
+  </g>
+
+  <text class="caption" x="490" y="432" text-anchor="middle">Optimal levels beat maximum doses: even helpful compounds backfire if your baseline is already full or timing is off.</text>
+</svg>

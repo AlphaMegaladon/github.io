@@ -15,6 +15,15 @@
 ## Posts
 
 <div class="post-list">
+  <a class="post-card" href="posts/2026-w48.html">
+    <div class="post-card-meta">
+      <span>2026-11-27 · Week 48</span>
+      <span class="post-card-tag">Health &amp; Longevity</span>
+    </div>
+    <div class="post-card-title">2026-W48: Longevity, Supplements, and My Two Fails</div>
+    <p class="post-card-excerpt">From highway podcasts and preventive blood work at 33 to unbundling clean nutrients from meat's WHO cancer risk, my current daily stack, and why CDP-choline and psyllium husks backfired.</p>
+  </a>
+
   <a class="post-card" href="posts/2026-w47.html">
     <div class="post-card-meta">
       <span>2026-11-20 · Week 47</span>
